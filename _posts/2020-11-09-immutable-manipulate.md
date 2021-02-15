@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Manipulate immutable collections with no performance hit.
-description:  Manipulate immutable collections with no performance hit. Immutable.js and lodash.js. JavaScript live tutorial.
+title:  Manipulate immutable collections with no performance hit - | Klipse Blog |
+description:  Manipulate immutable collections with no performance hit. 
 date:   2020-11-09 02:21:34 +0200
 categories: javascript
 thumbnail: assets/klipse.png
@@ -10,6 +10,9 @@ author: Yehonathan Sharvit
 minified_plugin: true
 
 ---
+ <meta name="description" 
+content="how to manipulate carefully immutable data collection from Immutable.js? with the a data manipulation library like Lodash.js, leveraging Immutable’s shallow and deep conversion functions">
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/immutable/4.0.0-rc.12/immutable.min.js" integrity="sha512-OA48phPVdkQE2u9b6nhv71zeq9zvwc6oLq3IVWLw8WfRlcRO/+6zhUcWZxfXi75agm3bfqCxIdstBfK/g6fYvw==" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js" integrity="sha512-90vH1Z83AJY9DmlWa8WkjkV79yfS2n2Oxhsi2dZbIv0nC4E6m5AbH8Nh156kkM7JePmqD6tcZsfad1ueoaovww==" crossorigin="anonymous"></script>
