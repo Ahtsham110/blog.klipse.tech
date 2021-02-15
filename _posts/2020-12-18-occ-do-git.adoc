@@ -1,4 +1,4 @@
-= Applying Git and Optimistic Concurrency Control principles to Data Oriented Programming
+= Applying Git and Optimistic Concurrency Control principles to Data Oriented Programming 
 :page-layout: post
 :includedir: _posts/data-book/code
 :page-description: Applying Git and Optimistic Concurrency Control principles to Data Oriented Programming. Leverage structural sharing.
@@ -14,6 +14,9 @@
 ++++
 {% include databook-intro.html %}
 ++++
+
+  <meta name="description" 
+content="Ultimately, we have seen in the book how DO deals with the requests, now in this chapter we illustrate how DO deals with mutations, i.e. requests that change the system state.">
 
 == Introduction
 
@@ -31,7 +34,7 @@ DO manages concurrency using a lock free strategy called *Optimistic Concurrency
 The code in both phases is made *efficient* in terms of *memory* and *computation* by ensuring that the data is *immutable*: Instead of mutating data in place, we create a new version of the data, leveraging a *structural sharing* algorithm.  As a consequence, the computation done in the Calculation phase is efficient and the comparison between two versions of the data for conflict resolution in the Commit phase is super fast.
 
 
-== Optimistic Concurrency Control
+=== Optimistic Concurrency Control
 
 [quote]
 *Optimistic Concurrency Control* with *immutable* data is super *efficient*.
@@ -50,7 +53,7 @@ Updating the state of the system is done inside a *commit* phase. The commit pha
 
 image::../uml/chapter04/mutation-flow-icons.png[]
 
-== Structural sharing
+=== Structural sharing
 
 Structural sharing allows to *efficiently* create new versions of immutable data. In DO, we leverage *structural sharing* in the *calculation* phase of a *mutation* to compute the next state of the system based of the current state of the system. Inside the calculation phase, we don't have to deal with any concurrency control: this is delayed to the commit phase. As a consequence, the code involved in the calculation phase of a mutation remains *stateless* and is as simple as the code of a query.
 
@@ -135,7 +138,7 @@ We will see in a moment how we leverage this sharing of references to make the c
 [quote]
 *Structural sharing* provides an *efficient* way (both *memory* and *computation*) to create a new version of the data by recursively sharing the parts that don't need to change.
 
-== Persistent data structures
+=== Persistent data structures
 
 
 
@@ -151,7 +154,7 @@ The *drawback* of persistent data structures is that they are not native which m
 
 That's one of the reasons why I love Clojure: the native data structures of the language are immutable!
 
-== The reconciliation algorithm
+=== The reconciliation algorithm
 
 [quote]
 In a production system, multiple mutations run concurrently. Before updating the state, we need to reconcile.
@@ -193,7 +196,7 @@ And if there is a conflict, we abort the mutation.
 In a user facing system, conflicting concurrent mutations are fairly rare: that's why it's OK to abort and let the user run the mutation again.
 
 
-== The implementation of the Commit phase
+=== The implementation of the Commit phase
 
 The code for the Commit phase is made of 3 classes:
 
@@ -246,7 +249,7 @@ You may have noticed that think the <<consistency,code>> for the `Consistency` c
 The code works fine in a single threaded environment like JavaScript where concurrency is handled via an *event loop*. However in a *multi threaded* environment, the code needs to be refined a bit and use atoms to be thread safe.
 
 
-== Some examples
+=== Some examples
 
 
 Let's make the reconciliation algorithm more concrete by giving an example of a reconciliation between non-conflicting concurrent mutations.
@@ -308,7 +311,7 @@ include::{includedir}/chapter04/data-diff-conflict-2.js[]
 
 In that case, the reconciliation will fail.
 
-== Wrapping up
+=== Wrapping up
 
 In this chapter, we have explored how DO *manages state* with *Optimistic Concurrency Control*, where the mutation logic is split into Calculation and Commit phases.
 
