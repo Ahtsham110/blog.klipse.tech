@@ -1,7 +1,7 @@
 ---
 local_klipse: false
 layout: post
-title:  A new way of blogging about HTML and CSS
+:page-title:  The Best way blogging about HTML and CSS -| Klipse Blog |
 description:  A new way of blogging about HTML and CSS
 date:   2020-09-10 06:13:14 +0200
 categories: clojure
@@ -10,6 +10,8 @@ guid: 7A8B36D7-CA57-42F7-9C74-CE8757BF1716
 author: Yehonathan Sharvit
 ---
 
+ <meta name="description" 
+content="People think that playing with HTML and CSS is difficult than playing with online builders like WP , Wix and others. But, here you will find best practices to learn best methods about HTML and CSS.">
 
 
 Imagine you want to write a blog post that shows something really cool about `html` and `css`. 
