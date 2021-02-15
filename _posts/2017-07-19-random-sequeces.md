@@ -1,6 +1,6 @@
 ---
-layout: post
-title:  "It's complex to measure complexity"
+page-layout: post
+page-title: It's complex to measure complexity -| Klipse Blog |
 description:  "Randomness and Complexity. javascript interactive examples. klipse random sequences"
 date:   2017-07-19 07:43:52 +0200
 categories: javascript
@@ -9,6 +9,8 @@ guid: "2B8567D5-3BEA-4751-BD6D-21B6BC9693BE"
 author: "Yehonathan Sharvit"
 ---
 
+ <meta name="description" 
+content="learn the best practices for generating pseudo-random sequences and here we will discuss about how  wecan measure the complexity (i.e. the randomness) of a sequence of numbers.">
 
 Have you ever thought how we can generate random numbers mathematically?
 
