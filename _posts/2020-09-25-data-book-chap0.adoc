@@ -1,6 +1,7 @@
-= What is Data Oriented Programming?
+= What is Data Oriented Programming? 
+:page-title: What is Data Oriented Programming? -| Klipse Blog |
 :page-layout: post
-:page-description: What is Data Oriented programming?
+:page-description: Data Oriented Programming: A brief Introduction.
 :page-categories: databook
 :page-guid: 81362E9F-45CF-46A1-BD8B-971FCD540DDE
 :page-thumbnail: assets/klipse.png
@@ -10,6 +11,9 @@
 :page-author: Yehonathan Sharvit
 :page-date:   2020-09-25 07:45:32 +0200
 
+
+ <meta name="description" 
+content="Data-Oriented Programming approaches coding in a slightly different way. Instead of objects, everything is data and everything can be acted upon. This separates the functionality and data.">
 
 ++++
 {% include databook-intro.html %}
