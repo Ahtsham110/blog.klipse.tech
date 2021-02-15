@@ -1,4 +1,4 @@
-= Computing the data diff between two hash maps
+= Computing the Data diff between Two Hash Maps - | Klipse Blog |
 :page-layout: post
 :includedir: _posts/data-book/code
 :page-description: Computing the data diff between two hash maps.
@@ -15,6 +15,9 @@
 {% include databook-intro.html %}
 ++++
 
+
+<meta name="description" 
+content="The data Difference b/w two hash maps is always been difficult but, here we implemented such a Technique that will let you do that work very easily, here you will find the best way to Compute the Data Difference Between Two Hash Maps.">
 
 Our link:{% post_url 2020-12-18-occ-do-git %}[implementation] of the 3-way merge resolution algorithm, where the system state is represented as a nested hash map, relies on the ability two compare two versions of the system state via the `DataDiff` class that implements:
 
