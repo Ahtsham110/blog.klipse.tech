@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A new way of blogging about Python
-description: Klipse allows you to include interactive Python code snippets in a technical blog. 
+title: A New Way Of Blogging With Python - | Klipse Blog |
+description: Klipse allows you to include interactive Python code snippets in a Technical Blog. 
 date:   2021-02-07 04:34:28 +0200
 categories: python
 thumbnail: assets/klipse.png
@@ -9,6 +9,9 @@ guid: 7AD554D9-05AF-4AA1-A5A4-926A823DE86B
 author: Yehonathan Sharvit
 minified_plugin: true
 ---
+<meta name="description" 
+content="People always had dreams about Blogging with Python.Here we have developed Klipse Plugin, which allows you totransform static code snippets of an HTML Page into live and interactive snippets.">
+
 
 This blog post is about to show a new way of blogging about Python.
 
